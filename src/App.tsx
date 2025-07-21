@@ -1,10 +1,10 @@
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import AppRoutes from './routes/AppRoutes'
+import './GlobalStyle.css'
 
-export default function App() {
+const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-  );
+    <AppRoutes/>
+  )
 }
+
+export default App
