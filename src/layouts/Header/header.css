@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 9vh;
+  width: 100%;
+  border-bottom: 1px solid #3A3E43;
+  padding: 0 15px;
+  gap: 20px;
+  background-color: #40BFAE;
+}
+
+.burger-a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.burger-icon {
+    font-size: 1.4em;
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.title {
+    font-size: 1.5em;
+    color: #3A3E43;
+}
