@@ -1,4 +1,5 @@
 import SectionTitle from '../../components/SectionTitle'
+import SearchBar from '../../components/SearchBar'
 import './Home.css'
 
 const Home = () => {
@@ -7,7 +8,9 @@ const Home = () => {
       <SectionTitle
         line1='Escritório'
         span='de'
-        line2='Projetos'/>
+        line2='Projetos'
+      />
+      <SearchBar placeholder='Encontre o seu edital'/>
     </div>
   )
 }
