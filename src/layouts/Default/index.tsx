@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import Header from '../Header'
-import './default.css'
+import './Default.css'
 
 const Default = ({children}: {children: ReactNode}) => {
     return (
