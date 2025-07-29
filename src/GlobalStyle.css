@@ -22,4 +22,12 @@ html, body, #root {
   --color-gray-secondary: #eeeeee;
   --background-color-primary: #c4c4c426;
   --height-header: 9vh;
+
+
+  --color-primary-blue: #2563eb;
+  --color-primary-blue-hover: #1d4ed8;
+
+  --color-light-gray: #f0f0f0;
+  --color-medium-gray: #ddd;
+  --color-shadow-hover: rgba(0, 0, 0, 0.08);
 }
