@@ -2,8 +2,41 @@ import SectionTitle from '../../components/SectionTitle'
 import SearchBar from '../../components/SearchBar'
 import Card from '../../components/Card'
 import './Home.css'
+import { useEffect, useState } from 'react';
+
+type Link = {
+  link: string;
+  title?: string;
+}
+
+type Call = {
+  title?: string;
+  description?: string;
+  inscription?: string;
+  initial_funding?: string;
+  source?: string;
+  links?: Link[];
+}
 
 const Home = () => {
+  const [calls, setCalls] = useState<Call[]>([])
+
+  useEffect(() => {
+    const fetchCalls = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/calls')
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setCalls(data);
+      } catch (error) {
+        console.error('There has been a problem with your fetch operation:', error)
+      }
+    }
+    fetchCalls()
+  }, [])
+  
   return (
     <div className="container">
       <SectionTitle
@@ -12,19 +45,15 @@ const Home = () => {
         line2='Projetos'
       />
       <SearchBar placeholder='Encontre o seu edital'/>
-      <Card 
-        chamada={{
-          title: 'Chamada Pública para Projetos de Pesquisa',
-          description: 'Apoio a projetos de pesquisa inovadores nas áreas de tecnologia e ciências sociais.',
-          inscription: '01/01/2024 - 31/03/2024',
-          initial_funding: 'R$ 100.000,00',
-          source: 'fundacao_araucaria',
-          links: [
-            { link: '#', title: 'Ver documentos' },
-            { link: '#', title: 'Mais informações' }
-          ]
-        }}
-      />
+      
+      <div className='calls-container'>
+        {calls.length !== 0 ? calls.map((call, index) => (
+          <Card
+            key={index}
+            chamada={call}
+          />
+        )) : <div className="no-calls">Nenhuma chamada foi encontrada...</div>}
+      </div>
     </div>
   )
 }

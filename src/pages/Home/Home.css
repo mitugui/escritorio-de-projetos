@@ -6,3 +6,20 @@
   padding: 40px;
   padding-top: 80px;
 }
+
+.calls-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.no-calls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+  height: 100%;
+  font-size: 1rem;
+  color: var(--color-gray-primary);
+}
