@@ -19,6 +19,7 @@ html, body, #root {
 :root {
   --color-primary: #40BFAE;
   --color-gray-primary: #3A3E43;
+  --color-gray-primary-disabled: #a1a1a1;
   --color-gray-secondary: #eeeeee;
   --background-color-primary: #c4c4c426;
   --height-header: 9vh;
