@@ -7,23 +7,24 @@
 }
 
 body {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   background-color: var(--background-color-primary);
   color: var(--color-gray-primary);
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
 :root {
-  --color-primary: #40BFAE;
-  --color-gray-primary: #3A3E43;
+  --color-primary: #40bfae;
+  --color-gray-primary: #3a3e43;
   --color-gray-primary-disabled: #a1a1a1;
   --color-gray-secondary: #eeeeee;
   --background-color-primary: #c4c4c426;
   --height-header: 9vh;
-
 
   --color-primary-blue: #2563eb;
   --color-primary-blue-hover: #1d4ed8;

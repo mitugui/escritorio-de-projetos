@@ -1,6 +1,6 @@
-import './Card.css'
-import CardHeader from './CardHeader'
-import CardDescription from './CardDescription'
+import './Card.css';
+import CardHeader from './CardHeader';
+import CardDescription from './CardDescription';
 import CardHighlight from './CardHighlight';
 // import { useState } from 'react';
 
@@ -42,9 +42,7 @@ const ChamadaCard = ({ chamada }: Props) => {
           source={chamada.source}
         />
       </div>
-      <CardHighlight 
-        inscription={chamada.inscription}
-      />
+      <CardHighlight inscription={chamada.inscription} />
     </div>
   );
 };

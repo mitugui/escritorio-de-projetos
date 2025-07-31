@@ -11,17 +11,17 @@
 }
 
 .burger-a {
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .burger-icon {
-    font-size: 1.4em;
-    width: 1.4em;
-    height: 1.4em;
+  font-size: 1.4em;
+  width: 1.4em;
+  height: 1.4em;
 }
 
 .title {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }

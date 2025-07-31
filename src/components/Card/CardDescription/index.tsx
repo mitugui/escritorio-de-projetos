@@ -1,28 +1,26 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-regular-svg-icons';
-import './CardDescription.css'
+import './CardDescription.css';
 
 type Props = {
-    description?: string;
-    source?: string;
-}
+  description?: string;
+  source?: string;
+};
 
-const CardDescription = ({description, source}: Props) => {
-    return (
-        <>
-            {description && (
-                <p className="card-description">{description}</p>
-            )}
-            <div className='card-bottom'>
-                <div className="card-links">
-                    <a href="#" className="card-link">
-                        <FontAwesomeIcon icon={faFile} />
-                        Ver documentos
-                    </a>
-                </div>
-                {source && (
-                    <>
-                        {/* <div className="info-item">
+const CardDescription = ({ description, source }: Props) => {
+  return (
+    <>
+      {description && <p className="card-description">{description}</p>}
+      <div className="card-bottom">
+        <div className="card-links">
+          <a href="#" className="card-link">
+            <FontAwesomeIcon icon={faFile} />
+            Ver documentos
+          </a>
+        </div>
+        {source && (
+          <>
+            {/* <div className="info-item">
                             {source === 'fundacao_araucaria' && (
                                 <img
                                     src="https://www.seti.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2023-09/logofa.jpg"
@@ -38,11 +36,11 @@ const CardDescription = ({description, source}: Props) => {
                                 />
                             )}
                         </div> */}
-                    </>
-                )}
-            </div>
-        </>
-    )
-}
+          </>
+        )}
+      </div>
+    </>
+  );
+};
 
 export default CardDescription;

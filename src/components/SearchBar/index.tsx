@@ -6,7 +6,7 @@ interface SearchBarProps {
   placeholder: string;
 }
 
-const SearchBar = ({placeholder}: SearchBarProps) => {
+const SearchBar = ({ placeholder }: SearchBarProps) => {
   return (
     <div className="search-bar">
       <button className="filter-button">
@@ -20,7 +20,7 @@ const SearchBar = ({placeholder}: SearchBarProps) => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default SearchBar;

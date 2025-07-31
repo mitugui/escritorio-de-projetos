@@ -25,7 +25,8 @@
   border-color: var(--color-gray-primary);
 }
 
-.search-input, .search-button {
+.search-input,
+.search-button {
   height: 50px;
   font-size: 1em;
   background-color: var(--background-color-primary);
