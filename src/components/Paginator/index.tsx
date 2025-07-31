@@ -29,7 +29,7 @@ const Paginator = ({ page, totalItems, perPage }: PaginatorProps) => {
   return (
     <div className="paginator">
       <div className="pages">
-        {page > 1 && (
+        {page > 1 && page <= totalPages && (
           <Link
             to={`?page=${page - 1}`}
             className="paginator-button"
@@ -60,9 +60,11 @@ const Paginator = ({ page, totalItems, perPage }: PaginatorProps) => {
           </Link>
         )}
       </div>
-      <div className="paginator-info">
-        Página {page} de {totalPages}
-      </div>
+      {page >= 1 && page <= totalPages && (
+        <div className="paginator-info">
+          Página {page} de {totalPages}
+        </div>
+      )}
     </div>
   );
 };
