@@ -1,23 +1,40 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFile } from '@fortawesome/free-regular-svg-icons';
 import './CardDescription.css';
+import { useState } from 'react';
+import LinksModal from '../../LinksModal';
 
 type Props = {
+  title: string;
   description?: string;
   source?: string;
+  links?: { link: string; title?: string }[]; // passe links como prop aqui
 };
 
-const CardDescription = ({ description, source }: Props) => {
+const CardDescription = ({ title, description, source, links = [] }: Props) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => setModalIsOpen(true);
+  const closeModal = () => setModalIsOpen(false);
+
   return (
     <>
       {description && <p className="card-description">{description}</p>}
       <div className="card-bottom">
         <div className="card-links">
-          <a href="#" className="card-link">
+          <button className="card-link" onClick={openModal}>
             <FontAwesomeIcon icon={faFile} />
             Ver documentos
-          </a>
+          </button>
         </div>
+
+        <LinksModal
+          title={title}
+          links={links}
+          isOpen={modalIsOpen}
+          closeModal={closeModal}
+        />
+
         {source && (
           <>
             {/* <div className="info-item">

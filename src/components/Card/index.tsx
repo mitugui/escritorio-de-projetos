@@ -2,7 +2,6 @@ import './Card.css';
 import CardHeader from './CardHeader';
 import CardDescription from './CardDescription';
 import CardHighlight from './CardHighlight';
-// import { useState } from 'react';
 
 type Link = {
   link: string;
@@ -10,7 +9,7 @@ type Link = {
 };
 
 type Chamada = {
-  title?: string;
+  title: string;
   description?: string;
   inscription?: string;
   initial_funding?: string;
@@ -21,12 +20,6 @@ type Chamada = {
 type Props = {
   chamada: Chamada;
 };
-
-// const [linksModal, setLinksModal] = useState<boolean>(false);
-
-// const toggleLinksModal = () => {
-//   setLinksModal(!linksModal);
-// }
 
 const ChamadaCard = ({ chamada }: Props) => {
   return (
@@ -40,6 +33,8 @@ const ChamadaCard = ({ chamada }: Props) => {
         <CardDescription
           description={chamada.description}
           source={chamada.source}
+          title={chamada.title}
+          links={chamada.links}
         />
       </div>
       <CardHighlight inscription={chamada.inscription} />
