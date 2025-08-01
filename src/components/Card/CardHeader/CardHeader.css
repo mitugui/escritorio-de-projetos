@@ -25,9 +25,9 @@
 }
 
 .badge {
-  background-color: var(--light-gray);
+  background-color: var(--color-light-gray);
   padding: 0.25rem 0.5rem;
-  border-radius: 0.375rem;
+  border-radius: 8px;
   font-size: 0.8rem;
   font-weight: bold;
   white-space: nowrap;
