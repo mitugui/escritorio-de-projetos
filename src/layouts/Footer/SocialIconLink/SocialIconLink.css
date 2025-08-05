@@ -1,0 +1,8 @@
+.social-icon-anchor {
+  color: var(--color-gray-primary);
+  font-size: 1.5rem;
+}
+
+.social-icon-anchor:visited {
+  color: var(--color-gray-primary);
+}
