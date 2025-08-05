@@ -34,4 +34,6 @@ body,
   --color-light-gray: #f0f0f0;
   --color-medium-gray: #ddd;
   --color-shadow-hover: rgba(0, 0, 0, 0.08);
+
+  --color-footer-bottom-text: #6c757d;
 }

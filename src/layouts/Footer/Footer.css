@@ -1,0 +1,6 @@
+.footer-bottom {
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-footer-bottom-text);
+}
