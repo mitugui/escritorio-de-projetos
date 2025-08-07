@@ -1,7 +1,7 @@
 .company-info {
   width: 100%;
   border-top: 2px solid var(--color-footer-border);
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 5px;
 }
 
 .footer-logo {

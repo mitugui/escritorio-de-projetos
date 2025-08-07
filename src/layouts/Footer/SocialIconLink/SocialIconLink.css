@@ -1,6 +1,13 @@
 .social-icon-anchor {
   color: var(--color-gray-primary);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  background-color: var(--color-footer-icon-background);
+  display: flex;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-icon-anchor:visited {
