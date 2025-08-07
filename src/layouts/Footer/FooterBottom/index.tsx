@@ -1,11 +1,8 @@
 import './FooterBottom.css';
+import { footerBottomText } from '../../../assets/inovamar/info';
 
 const FooterBottom = () => {
-  return (
-    <p className="footer-bottom">
-      © 2025 Inovamar - Escritório de Projetos. Todos os direitos reservados
-    </p>
-  );
+  return <p className="footer-bottom">{footerBottomText}</p>;
 };
 
 export default FooterBottom;

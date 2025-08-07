@@ -3,8 +3,8 @@ import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import './SocialIconLink.css';
 
 type SocialIconLinkProps = {
-  href: string;
   icon: IconProp;
+  href: string;
 };
 
 const SocialIconLink = ({ href, icon }: SocialIconLinkProps) => {
