@@ -9,6 +9,9 @@ import {
   faLocationDot,
   faPhone,
 } from '@fortawesome/free-solid-svg-icons';
+import iceLogo from './companies/ice_logo.png';
+import incubadoraLogo from './companies/incubadora_logo.png';
+import marBrasilLogo from './companies/marbrasil_logo.png';
 
 type ContactLink = {
   icon: IconProp;
@@ -20,6 +23,26 @@ type SocialIconLink = {
   icon: IconProp;
   link: string;
 };
+
+type Companies = {
+  logo: string;
+  alt: string;
+};
+
+export const companies: Companies[] = [
+  {
+    logo: iceLogo,
+    alt: 'ICE Logo',
+  },
+  {
+    logo: incubadoraLogo,
+    alt: 'Incubadora Logo',
+  },
+  {
+    logo: marBrasilLogo,
+    alt: 'Mar Brasil Logo',
+  },
+];
 
 export const socialIconLinks: SocialIconLink[] = [
   {
