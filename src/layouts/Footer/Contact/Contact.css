@@ -1,0 +1,20 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--color-footer-title);
+}
+
+.icon-link {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-footer-text);
+  text-decoration: none;
+}

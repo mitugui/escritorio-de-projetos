@@ -1,0 +1,42 @@
+.company-info {
+  width: 100%;
+  border-top: 2px solid var(--color-footer-border);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.company-info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.social-media {
+  display: flex;
+  gap: 15px;
+}
+
+.company-details {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--color-footer-title);
+}
+
+.company-details-about {
+  font-size: 0.8rem;
+  color: var(--color-footer-text);
+}
