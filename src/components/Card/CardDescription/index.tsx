@@ -3,15 +3,17 @@ import { faFile } from '@fortawesome/free-regular-svg-icons';
 import './CardDescription.css';
 import { useState } from 'react';
 import LinksModal from '../../LinksModal';
+import CardInscription from '../CardInscription';
 
 type Props = {
   title: string;
   description?: string;
   source?: string;
-  links?: { link: string; title?: string }[]; // passe links como prop aqui
+  links?: { link: string; title?: string }[];
+  inscription?: string;
 };
 
-const CardDescription = ({ title, description, source, links = [] }: Props) => {
+const CardDescription = ({ title, description, source, links = [], inscription }: Props) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => setModalIsOpen(true);
@@ -20,6 +22,7 @@ const CardDescription = ({ title, description, source, links = [] }: Props) => {
   return (
     <>
       {description && <p className="card-description">{description}</p>}
+      <CardInscription inscription={inscription} />
       <div className="card-bottom">
         <div className="card-links">
           <button className="card-link" onClick={openModal}>
@@ -37,7 +40,7 @@ const CardDescription = ({ title, description, source, links = [] }: Props) => {
 
         {source && (
           <>
-            {/* <div className="info-item">
+            <div className="info-item">
                             {source === 'fundacao_araucaria' && (
                                 <img
                                     src="https://www.seti.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2023-09/logofa.jpg"
@@ -52,7 +55,7 @@ const CardDescription = ({ title, description, source, links = [] }: Props) => {
                                     className="logo"
                                 />
                             )}
-                        </div> */}
+                        </div>
           </>
         )}
       </div>
