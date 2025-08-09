@@ -9,8 +9,8 @@ type Props = {
 const CardHeader = ({ title, initial_funding }: Props) => {
   return (
     <div className="card-header">
-      <div>{title && <h3 className="card-title">{title}</h3>}</div>
       {initial_funding && <span className="badge">{initial_funding}</span>}
+      <div>{title && <h3 className="card-title">{title}</h3>}</div>
     </div>
   );
 };
