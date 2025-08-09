@@ -1,7 +1,6 @@
 import './Card.css';
 import CardHeader from './CardHeader';
 import CardDescription from './CardDescription';
-import CardHighlight from './CardHighlight';
 
 type Link = {
   link: string;
@@ -35,9 +34,9 @@ const ChamadaCard = ({ chamada }: Props) => {
           source={chamada.source}
           title={chamada.title}
           links={chamada.links}
+          inscription={chamada.inscription}
         />
       </div>
-      <CardHighlight inscription={chamada.inscription} />
     </div>
   );
 };
