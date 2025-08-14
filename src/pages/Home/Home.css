@@ -3,18 +3,17 @@
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  padding: 40px;
-  padding-top: 80px;
+  padding: 20% 12% 20% 12%;
 }
 
 .calls-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.8rem;
 }
 
 .no-calls {
-  margin-top: 30px;
+  margin-top: 2.8rem;
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -22,4 +21,17 @@
   height: 100%;
   font-size: 1rem;
   color: var(--color-gray-primary);
+}
+
+@media screen and (min-width: 481px) {
+  .container {
+    padding: 12% 14% 5% 14%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .calls-container {
+    width: 50em;
+    margin: auto;
+  }
 }
