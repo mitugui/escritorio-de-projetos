@@ -4,6 +4,7 @@ import './CardDescription.css';
 import { useState } from 'react';
 import LinksModal from '../../LinksModal';
 import CardInscription from '../CardInscription';
+import { cnpq, fundacaoAraucaria } from '../../../assets/inovamar/info';
 
 type Props = {
   title: string;
@@ -13,7 +14,13 @@ type Props = {
   inscription?: string;
 };
 
-const CardDescription = ({ title, description, source, links = [], inscription }: Props) => {
+const CardDescription = ({
+  title,
+  description,
+  source,
+  links = [],
+  inscription,
+}: Props) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => setModalIsOpen(true);
@@ -41,21 +48,17 @@ const CardDescription = ({ title, description, source, links = [], inscription }
         {source && (
           <>
             <div className="info-item">
-                            {source === 'fundacao_araucaria' && (
-                                <img
-                                    src="https://www.seti.pr.gov.br/sites/default/arquivos_restritos/files/imagem/2023-09/logofa.jpg"
-                                    alt="Logo Fundação Araucária"
-                                    className="logo"
-                                />
-                            )}
-                            {source === 'cnpq' && (
-                                <img
-                                    src="https://portais.univasf.edu.br/nupecc/menu-lateral/pesquisas/construcoes-historicas-petrolina-pe/agradecimentos/logo-cnpq-nupecc.jpg/@@images/image.jpeg"
-                                    alt="Logo CNPq"
-                                    className="logo"
-                                />
-                            )}
-                        </div>
+              {source === 'fundacao_araucaria' && (
+                <img
+                  src={fundacaoAraucaria.logo}
+                  alt={fundacaoAraucaria.alt}
+                  className="logo"
+                />
+              )}
+              {source === 'cnpq' && (
+                <img src={cnpq.logo} alt={cnpq.alt} className="logo" />
+              )}
+            </div>
           </>
         )}
       </div>

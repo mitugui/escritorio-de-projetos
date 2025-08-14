@@ -3,6 +3,11 @@
   font-weight: 500;
   font-size: 0.8rem;
   line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
 }
 
 .card-bottom {
@@ -48,4 +53,16 @@
   width: 50px;
   height: auto;
   margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 481px) {
+  .card-description {
+    -webkit-line-clamp: 5;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .card-description {
+    -webkit-line-clamp: 3;
+  }
 }
