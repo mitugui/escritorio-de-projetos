@@ -28,24 +28,42 @@ const CardDescription = ({
 
   return (
     <>
-      {description && <p className="card-description">{description}</p>}
-      <CardInscription inscription={inscription} />
-      <div className="card-bottom">
-        <div className="card-links">
-          <button className="card-link" onClick={openModal}>
-            <FontAwesomeIcon icon={faFile} />
-            Ver documentos
-          </button>
+      <div className="card-mobile-layout">
+        {description && <p className="card-description">{description}</p>}
+        <CardInscription inscription={inscription} />
+        <div className="card-bottom">
+          <div className="card-links">
+            <button className="card-link" onClick={openModal}>
+              <FontAwesomeIcon icon={faFile} />
+              Documentos
+            </button>
+          </div>
+          {source && <Logo source={source} />}
         </div>
-
-        <LinksModal
-          title={title}
-          links={links}
-          isOpen={modalIsOpen}
-          closeModal={closeModal}
-        />
-        {source && <Logo source={source} />}
       </div>
+
+      <div className="card-desktop-layout">
+        <div className="card-description-container">
+          {description && <p className="card-description">{description}</p>}
+        </div>
+        <div className="card-info-container">
+          {source && <Logo source={source} />}
+          <CardInscription inscription={inscription} />
+          <div className="card-links">
+            <button className="card-link" onClick={openModal}>
+              <FontAwesomeIcon icon={faFile} />
+              Documentos
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <LinksModal
+        title={title}
+        links={links}
+        isOpen={modalIsOpen}
+        closeModal={closeModal}
+      />
     </>
   );
 };
