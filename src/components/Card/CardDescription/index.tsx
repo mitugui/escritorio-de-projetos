@@ -4,7 +4,7 @@ import './CardDescription.css';
 import { useState } from 'react';
 import LinksModal from '../../LinksModal';
 import CardInscription from '../CardInscription';
-import { cnpq, fundacaoAraucaria } from '../../../assets/inovamar/info';
+import Logo from '../Logo';
 
 type Props = {
   title: string;
@@ -44,23 +44,7 @@ const CardDescription = ({
           isOpen={modalIsOpen}
           closeModal={closeModal}
         />
-
-        {source && (
-          <>
-            <div className="info-item">
-              {source === 'fundacao_araucaria' && (
-                <img
-                  src={fundacaoAraucaria.logo}
-                  alt={fundacaoAraucaria.alt}
-                  className="logo"
-                />
-              )}
-              {source === 'cnpq' && (
-                <img src={cnpq.logo} alt={cnpq.alt} className="logo" />
-              )}
-            </div>
-          </>
-        )}
+        {source && <Logo source={source} />}
       </div>
     </>
   );
