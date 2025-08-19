@@ -17,10 +17,19 @@
 .burger-icon {
   font-size: 1.4em;
   width: 2em;
+  color: var(--color-white);
 }
 
 .title {
   font-size: 1.5em;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.title img {
+  width: 6rem;
 }
 
 .placeholder {

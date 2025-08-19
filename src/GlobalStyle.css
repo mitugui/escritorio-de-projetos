@@ -20,6 +20,7 @@ body,
 
 :root {
   --color-primary: #40bfae;
+  --color-white: #ffffff;
   --color-gray-primary: #3a3e43;
   --color-gray-primary-disabled: #a1a1a1;
   --color-gray-secondary: #eeeeee;
