@@ -9,6 +9,7 @@ const Header = () => {
         <FontAwesomeIcon icon={faBars} className="burger-icon" />
       </a>
       <h1 className="title">Inovamar</h1>
+      <div className="placeholder"></div>
     </header>
   );
 };

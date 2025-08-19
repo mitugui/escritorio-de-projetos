@@ -25,5 +25,6 @@
 }
 
 .inscription-value {
+  text-align: start;
   font-weight: 800;
 }

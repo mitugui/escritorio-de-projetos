@@ -9,12 +9,13 @@ const CardInscription = ({ inscription }: CardInscriptionProps) => {
     <div className="card-inscription">
       {inscription ? (
         <div className="inscription-info-item">
-            <p className='inscription-title'>{"INSCRIÇÃO".toUpperCase()}</p>
-            <p className='inscription-value'>{inscription}</p>
+          <p className="inscription-title">{'INSCRIÇÃO'.toUpperCase()}</p>
+          <p className="inscription-value">{inscription}</p>
         </div>
       ) : (
         <div className="inscription-info-item">
-          <p className='inscription-value'>Data de inscrição não informada</p>
+          <p className="inscription-title">{'INSCRIÇÃO'.toUpperCase()}</p>
+          <p className="inscription-value">Data não informada</p>
         </div>
       )}
     </div>
