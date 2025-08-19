@@ -27,16 +27,18 @@ body,
   --background-color-modal: #f7f6f7;
   --background-color-modal-overlay: rgba(0, 0, 0, 0.5);
   --color-card-badge: #5f5f5f;
+  --color-yellow: #deb111;
+  --color-yellow-hover: #efc633;
 
   --color-primary-blue: #2563eb;
   --color-primary-blue-hover: #1d4ed8;
 
   --color-light-gray: #f0f0f0;
   --color-medium-gray: #ddd;
-  --color-shadow-hover: rgba(0, 0, 0, 0.08);
+  --color-shadow-hover: #00000014;
 
   --color-footer-text: #3a3e43;
   --color-footer-bottom-text: #6c757d;
   --color-footer-border: #a1a1a1;
-  --color-footer-icon-background: rgb(231, 231, 231);
+  --color-footer-icon-background: #e7e7e7;
 }

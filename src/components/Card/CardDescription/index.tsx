@@ -32,13 +32,13 @@ const CardDescription = ({
         {description && <p className="card-description">{description}</p>}
         <CardInscription inscription={inscription} />
         <div className="card-bottom">
+          {source && <Logo source={source} />}
           <div className="card-links">
             <button className="card-link" onClick={openModal}>
               <FontAwesomeIcon icon={faFile} />
               Documentos
             </button>
           </div>
-          {source && <Logo source={source} />}
         </div>
       </div>
 
