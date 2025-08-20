@@ -14,7 +14,7 @@ import incubadoraLogo from './companies/incubadora_logo.png';
 import marBrasilLogo from './companies/marbrasil_logo.png';
 import cnpqLogo from './companies/cnpq.png';
 import fundacaoAraucariaLogo from './companies/fundacao_araucaria.png';
-import type Companies from '../../layouts/Footer/Companies';
+import iceWhiteLogo from './companies/ice_white_logo.png';
 
 type ContactLink = {
   icon: IconProp;
@@ -55,6 +55,11 @@ export const cnpq: Company = {
 export const fundacaoAraucaria: Company = {
   logo: fundacaoAraucariaLogo,
   alt: 'Fundação Araucária Logo',
+};
+
+export const ice: Company = {
+  logo: iceWhiteLogo,
+  alt: 'ICE Logo',
 };
 
 export const socialIconLinks: SocialIconLink[] = [

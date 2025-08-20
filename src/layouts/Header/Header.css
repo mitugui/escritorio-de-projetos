@@ -1,10 +1,9 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
-  border-bottom: 1px solid var(--color-gray-primary);
-  padding: 30px 15px;
+  padding: 24px 15px;
   gap: 20px;
   background-color: var(--color-primary);
 }
@@ -12,16 +11,25 @@
 .burger-a {
   cursor: pointer;
   text-decoration: none;
-  color: inherit;
+  width: 4rem;
 }
 
 .burger-icon {
-  font-size: 1.4em;
-  width: 2em;
+  font-size: 1.8em;
+  width: 3em;
+  color: var(--color-white);
 }
 
 .title {
   font-size: 1.5em;
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.title img {
+  width: 3rem;
 }
 
 .placeholder {
@@ -34,19 +42,13 @@
   }
 
   .burger-a {
-    width: auto;
     display: flex;
     justify-content: center;
   }
 
   .title {
     font-size: 1.8em;
-    margin: 0 auto;
-  }
-
-  .placeholder {
-    display: block;
-    width: 2em;
+    margin-left: 20px;
   }
 }
 

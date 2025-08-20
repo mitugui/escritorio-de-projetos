@@ -25,19 +25,21 @@
 
 .card-link {
   border: none;
-  background: none;
+  background-color: var(--color-yellow);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--color-primary-blue);
+  color: var(--color-gray-primary);
   font-size: 0.95rem;
   text-decoration: none;
   font-weight: 700;
+  justify-content: center;
 }
 
 .card-link:hover {
-  text-decoration: underline;
-  color: var(--color-primary-blue-hover);
+  background-color: var(--color-yellow-hover);
 }
 
 .info-item {
