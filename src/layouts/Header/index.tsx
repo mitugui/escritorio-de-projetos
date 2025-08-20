@@ -6,14 +6,14 @@ import { ice } from '../../assets/inovamar/info';
 const Header = () => {
   return (
     <header className="header">
-      <a href="#" className="burger-a">
-        <FontAwesomeIcon icon={faBars} className="burger-icon" />
-      </a>
+      <div className="placeholder"></div>
       <h1 className="title">
         <img src={ice.logo} alt={ice.alt} />
         Inovamar
       </h1>
-      <div className="placeholder"></div>
+      <a href="#" className="burger-a">
+        <FontAwesomeIcon icon={faBars} className="burger-icon" />
+      </a>
     </header>
   );
 };
