@@ -15,6 +15,7 @@ import marBrasilLogo from './companies/marbrasil_logo.png';
 import cnpqLogo from './companies/cnpq.png';
 import fundacaoAraucariaLogo from './companies/fundacao_araucaria.png';
 import iceWhiteLogo from './companies/ice_white_logo.png';
+import funbioLogo from './companies/funbio.png';
 
 type ContactLink = {
   icon: IconProp;
@@ -60,6 +61,11 @@ export const fundacaoAraucaria: Company = {
 export const ice: Company = {
   logo: iceWhiteLogo,
   alt: 'ICE Logo',
+};
+
+export const funbio: Company = {
+  logo: funbioLogo,
+  alt: 'Funbio Logo',
 };
 
 export const socialIconLinks: SocialIconLink[] = [

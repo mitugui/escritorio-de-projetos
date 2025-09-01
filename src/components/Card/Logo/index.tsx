@@ -1,4 +1,4 @@
-import { cnpq, fundacaoAraucaria } from '../../../assets/inovamar/info';
+import { cnpq, fundacaoAraucaria, funbio } from '../../../assets/inovamar/info';
 
 type LogoProps = {
   source: string;
@@ -16,6 +16,9 @@ const Logo = ({ source }: LogoProps) => {
       )}
       {source === 'cnpq' && (
         <img src={cnpq.logo} alt={cnpq.alt} className="logo" />
+      )}
+      {source === 'funbio' && (
+        <img src={funbio.logo} alt={funbio.alt} className="logo" />        
       )}
     </div>
   );
