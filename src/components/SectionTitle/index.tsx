@@ -1,6 +1,5 @@
 import './SectionTitle.css';
-import logo from '../../assets/inovamar/logo.png';
-import raw_logo from '../../assets/inovamar/raw_logo.png';
+import logo from '../../assets/inovamar/logo.svg';
 import { companyName } from '../../assets/inovamar/info';
 
 interface SectionTitleProps {
@@ -13,7 +12,7 @@ const SectionTitle = ({ line1, span, line2 }: SectionTitleProps) => {
   return (
     <div className="section-title">
       <img
-        src={raw_logo}
+        src={logo}
         alt={'Logo' + companyName}
         className="title-logo title-logo-no-mobile"
       />
